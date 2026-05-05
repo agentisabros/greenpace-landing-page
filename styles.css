@@ -815,7 +815,7 @@ hr {
   body {
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .hero-details {
     top: 20%;
@@ -828,12 +828,17 @@ hr {
     width: 100%;
     height: auto;
     margin-left: 0;
-    padding-top: 20px;
+    padding-top: 50px;
+  }
+  section,
+  div {
+    max-width: 100% !important;
   }
   nav {
     height: 50px;
     flex-wrap: wrap;
     overflow: hidden;
+    box-sizing: border-box;
   }
   nav,
   header {
@@ -896,7 +901,8 @@ hr {
   }
   .heroImg-stack {
     width: 100%;
-    margin-left: 20px;
+    margin: 0;
+    overflow: hidden;
   }
   .heroImg-stack .img-main {
     width: 257px !important;
@@ -905,25 +911,25 @@ hr {
   .heroImg-stack .img-overlay {
     width: 178px;
     height: 185px;
-    left: 200px;
+    left: 50%;
   }
   .hero {
     display: flex;
     width: 100%;
     position: relative;
     padding: 0 !important;
-    margin-bottom: -150px;
+    margin-bottom: -350px;
   }
   .hero-img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     position: relative;
-    margin: 0;
+    margin-top: 20px;
     padding: 0 !important;
     overflow: hidden;
+    margin-bottom: 0;
   }
   .text {
-    margin-top: -250px;
     left: 15%;
   }
   .hero-img img {
@@ -946,13 +952,16 @@ hr {
     margin-top: 150px;
   }
   section {
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
     padding: 20px !important;
+    overflow-x: hidden;
   }
+
   .hero-details {
     width: 100%;
     text-align: center;
@@ -998,7 +1007,7 @@ hr {
   .hero-content {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
   .text {
     transform: none;
@@ -1017,28 +1026,25 @@ hr {
     justify-content: center;
   }
   .products-text {
-    width: 90%;
-    margin-left: 60px;
+    width: 100%;
   }
   .products-text h2 {
     font-size: 20px;
     width: 100%;
-    max-width: 289px;
+    margin-bottom: 10px;
     line-height: 28px;
     letter-spacing: -2%;
   }
   .products-text p {
     font-size: 18px;
     width: 100%;
-    max-width: 380px;
     line-height: 25px;
     letter-spacing: -2%;
     font-weight: 400;
   }
   .products-text a {
-    width: 176px;
+    width: 100%;
     height: 60px;
-    padding-left: 16px;
     border-radius: 50px;
     padding-top: 20px !important;
     font-size: 20px;
@@ -1048,8 +1054,7 @@ hr {
   }
 
   .hero-text p {
-    margin-left: 20px;
-    width: 350px;
+    width: 100%;
     text-align: left;
     font-size: 18px;
     font-weight: 400;
@@ -1058,14 +1063,14 @@ hr {
   }
   .hero-text h2 {
     font-size: 24px;
-    width: 105px;
-    margin-left: 20px;
+    width: 100%;
+
     margin-bottom: 20px;
     text-align: left;
   }
   .hero-text a {
-    margin-left: 20px;
-    width: 174px;
+    margin-left: 0;
+    width: 100%;
     height: 60px;
     align-self: center;
     border-radius: 50px;
@@ -1120,7 +1125,6 @@ hr {
   }
   .security-text {
     width: 100%;
-    max-width: 400px;
     margin-left: 0;
     text-align: left;
   }
@@ -1129,7 +1133,6 @@ hr {
     width: 100%;
     line-height: 26px;
     letter-spacing: -2%;
-    max-width: 220px;
     font-weight: 600;
     margin-left: 0;
     text-align: left;
@@ -1146,16 +1149,13 @@ hr {
   }
   .connect h2 {
     width: 100%;
-    max-width: 380px;
     font-size: 20px;
     line-height: 26px;
     letter-spacing: -2%;
     text-align: left;
-    margin-left: 20px;
   }
   .connect p {
     width: 100%;
-    max-width: 380px;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -2%;
@@ -1182,7 +1182,6 @@ hr {
   .connect-text h3 {
     font-size: 20px;
     width: 100%;
-    max-width: 340px;
     line-height: 26px;
     letter-spacing: -2%;
     font-weight: 600;
@@ -1190,13 +1189,12 @@ hr {
   }
   .connect-text p {
     width: 100%;
-    max-width: 340px;
+    max-width: 100%;
     height: 78px;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -2%;
     font-weight: 400;
-    margin-left: -10px;
   }
   .contact-content {
     display: flex;
@@ -1210,17 +1208,23 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 400px;
+    width: 100% !important;
     text-align: center;
-    margin-left: 0;
+    margin-left: 0 !important;
   }
   .contact-header {
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
   }
   .bottom-logo-holder {
-    margin-left: -250px;
     gap: 5px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: -150px;
+  }
+  .contact-holder p {
+    margin-bottom: -120px;
   }
   .contact-header span {
     font-size: 20px;
@@ -1229,7 +1233,7 @@ hr {
     letter-spacing: -2%;
     font-weight: 600;
     margin-left: 0;
-    text-align: center;
+    text-align: left;
   }
   .bottom-logo-holder img {
     width: 31px;
@@ -1239,7 +1243,7 @@ hr {
   .contact-details p {
     font-size: 18px;
     width: 100%;
-    max-width: 380px;
+
     line-height: 30px;
     letter-spacing: 0%;
     text-align: left;
@@ -1249,15 +1253,15 @@ hr {
   .contact-info-holder {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 32px;
+    align-items: start;
     width: 100%;
-    max-width: 380px;
     order: 2;
   }
+
   .contact-info p {
     font-size: 18px;
     width: 100%;
-    max-width: 380px;
     line-height: 31px;
     letter-spacing: 0%;
     text-align: left;
@@ -1270,12 +1274,18 @@ hr {
     gap: 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 31px;
     font-weight: 400;
     font-family:
       Euclid Circular B,
       sans-serif;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
   }
   .social-icons {
     display: none;

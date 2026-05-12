@@ -23,6 +23,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+   transition: #fff 0.3s ease, color 0.2s ease;
 }
 nav ul {
   list-style: none;

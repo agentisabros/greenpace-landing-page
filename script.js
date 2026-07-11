@@ -41,3 +41,61 @@ faqArrows.forEach((arrow) => {
     }
   });
 });
+
+const testimonialTrack = document.querySelector(".testimonial-track");
+const testimonialCards = document.querySelectorAll(".testimonial-card");
+const prevTestimonialBtn = document.querySelector(".testimonial-prev");
+const nextTestimonialBtn = document.querySelector(".testimonial-next");
+
+if (testimonialTrack && testimonialCards.length > 1 && prevTestimonialBtn && nextTestimonialBtn) {
+  let currentIndex = 0;
+
+  const updateTestimonialSlider = () => {
+    testimonialCards.forEach((card, index) => {
+      card.classList.toggle("active", index === currentIndex);
+      card.style.transform = index === currentIndex
+        ? "translateX(0) scale(1)"
+        : index < currentIndex
+          ? "translateX(-30px) scale(0.95)"
+          : "translateX(40px) scale(0.96)";
+      card.style.opacity = index === currentIndex ? "1" : "0";
+    });
+  };
+
+  prevTestimonialBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + testimonialCards.length) % testimonialCards.length;
+    updateTestimonialSlider();
+  });
+
+  nextTestimonialBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % testimonialCards.length;
+    updateTestimonialSlider();
+  });
+
+  updateTestimonialSlider();
+}
+
+// Connect-text touch/mouse interaction: add a class so shadow appears on touch
+document.addEventListener('DOMContentLoaded', () => {
+  const connectCards = document.querySelectorAll('.connect-text');
+  if (!connectCards.length) return;
+
+  connectCards.forEach((el) => {
+    // make focusable
+    if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
+
+    const add = () => el.classList.add('touch-active');
+    const remove = () => el.classList.remove('touch-active');
+
+    el.addEventListener('touchstart', add, {passive: true});
+    el.addEventListener('touchend', remove);
+    el.addEventListener('touchcancel', remove);
+
+    el.addEventListener('mousedown', add);
+    el.addEventListener('mouseup', remove);
+    el.addEventListener('mouseleave', remove);
+
+    el.addEventListener('focus', add);
+    el.addEventListener('blur', remove);
+  });
+});

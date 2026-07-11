@@ -64,10 +64,10 @@ nav img {
   border: 2px #48bd4c solid;
 }
 .nav-btns button {
-  width: 150px;
-  height: 51px;
-  border-radius: 25px;
-  font-size: 20px;
+  width: 120px;
+  height: 42px;
+  border-radius: 22px;
+  font-size: 16px;
   background-color: #48bd4c;
   cursor: pointer;
   color: #fff;
@@ -830,7 +830,7 @@ footer {
   padding-top: 50px;
   width: 100%;
   box-sizing: border-box;
-  position: absolute;
+  position: static;
 }
 .contact-details {
   width: 422px;
@@ -949,6 +949,17 @@ footer {
   font-size: 18px;
   font-family: "Euclid Circular B", sans-serif;
   line-height: 100%;
+}
+.contact-nav a,
+.contact-nav a:link,
+.contact-nav a:visited {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-nav a:hover,
+.contact-nav a:focus {
+  opacity: 0.8;
 }
 .contact-info {
   display: flex;
@@ -1530,6 +1541,22 @@ select {
   padding-left: 20px;
   background-color: #eef9ee;
   color: #000 !important;
+  border: 1px solid #d9e4d9;
+  box-sizing: border-box;
+ 
+}
+input:active{
+  color:#000 !important;
+}
+
+textarea {
+  width: 599px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #eef9ee;
+  padding: 20px;
+  border: 1px solid #d9e4d9;
+  box-sizing: border-box;
 }
 
 form button {
@@ -2846,6 +2873,10 @@ placeholder {
     height: 40px;
     padding: 20px;
     color: #000 !important;
+    background-color: #eef9ee;
+    border: 1px solid #d9e4d9;
+    box-sizing: border-box;
+    outline: none;
   }
   select {
     color: black;
@@ -2855,6 +2886,16 @@ placeholder {
     height: 40px;
     font-size: 16px;
     border: 1.5px solid black;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 340px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #eef9ee;
+    border: 1px solid #d9e4d9;
+    box-sizing: border-box;
   }
 
   label {

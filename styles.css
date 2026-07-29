@@ -1,10 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
 
-
 .max-width{
   width:100%;
   max-width:78rem;
 }
+
 testimonial-img
 .quote img{
   height:100%;
@@ -59,7 +59,6 @@ nav ul li {
 nav ul li a:hover {
   color: #000;
   text-decoration: none;
-  font-size: 20px;
   font-family: "Euclid Circular B", sans-serif;
   font-weight: 600;
 }
@@ -68,11 +67,11 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   font-family: "Euclid Circular B", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 ul a.active {
-  font-weight: bold;
-  color: #48bd4c; 
+  color: #000; 
+  font-weight: 500;
 }
 nav img {
   font-size: 40px;
@@ -354,6 +353,17 @@ h1 {
   margin-top: -50px;
   font-family: "Euclid Circular B";
 }
+
+.about-hero{
+  position: relative;
+}
+
+.about-hero-img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .download-btn {
   width: 150px;
   height: 40px;

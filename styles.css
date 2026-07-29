@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
 
+sec-store-btn
+
 .max-width{
   width:100%;
   max-width:78rem;
@@ -28,6 +30,11 @@ html {
   width: 100%;
   height: 100%;
 }
+
+a{
+  /* text-decoration: none; */
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -57,7 +64,7 @@ nav ul li {
   margin: 0 10px;
 }
 nav ul li a:hover {
-  color: #000;
+  color: #48bd4c;
   text-decoration: none;
   font-family: "Euclid Circular B", sans-serif;
   font-weight: 600;
@@ -70,8 +77,8 @@ nav ul li a {
   font-weight: 400;
 }
 ul a.active {
-  color: #000; 
-  font-weight: 500;
+  color: #48bd4c; 
+  font-weight: 600;
 }
 nav img {
   font-size: 40px;
@@ -103,7 +110,7 @@ nav img {
 }
 .nav-btns button {
   width: 100px;
-  height: 36px;
+  height: 40px;
   border-radius: 18px;
   font-size: 14px;
   background-color: #48bd4c;
@@ -144,10 +151,18 @@ nav img {
 }
 .hero {
   width: 100%;
-  height: 650px;
+  height: calc(100dvh - 120px);
   object-fit: cover;
   position: relative;
+  background:red;
 }
+
+.hero-img{
+  position:relative;
+  height:100%;
+  background-color: blue;
+}
+
 .hero-img::after {
   content: "";
   position: absolute;
@@ -156,11 +171,13 @@ nav img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.15);
+  max-height: calc(100dvh - 120px);
 }
 
 .hero-image{
   width:100%;
   object-fit: cover;
+  max-height: calc(100dvh - 120px);
 }
 
 .hero-phone {
@@ -212,7 +229,7 @@ h1 {
 }
 .store-btn {
   width: 155px;
-  height: 45px;
+  height: 53px;
   background-color: #fff;
   color: #000;
   text-decoration: none;
@@ -262,7 +279,8 @@ h1 {
   align-items: flex-start;
 }
 .btn-text .small {
-  font-size: 10px;
+  font-size: 11.5px;
+  color: #333;
 }
 .btn-text .highlight {
   font-size: 16px;
@@ -779,7 +797,7 @@ h1 {
 }
 .sec-store-btn {
   display: flex;
-
+  text-decoration: none;
   background-color: #000;
   width: 176px;
   height: 53px;
@@ -797,6 +815,7 @@ h1 {
 }
 .sec-store-btn .small {
   font-size: 10px;
+  color: #fff;
 }
 .sec-store-btn .highlight {
   font-size: 16px;
@@ -1759,6 +1778,14 @@ placeholder {
 .faq-item.active .faq-answer {
   display: block;
 }
+
+.gradient-text {
+  background: linear-gradient(90deg, #48BD4C 0%, #000000 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media (max-width: 768px) {
   * {
     box-sizing: border-box;

@@ -1,7 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
 
-sec-store-btn
-
+hero-phone
 .max-width{
   width:100%;
   max-width:78rem;
@@ -29,10 +28,6 @@ testimonial-img
 html {
   width: 100%;
   height: 100%;
-}
-
-a{
-  /* text-decoration: none; */
 }
 
 body {
@@ -154,13 +149,11 @@ nav img {
   height: calc(100dvh - 120px);
   object-fit: cover;
   position: relative;
-  background:red;
 }
 
 .hero-img{
   position:relative;
   height:100%;
-  background-color: blue;
 }
 
 .hero-img::after {
@@ -177,15 +170,17 @@ nav img {
 .hero-image{
   width:100%;
   object-fit: cover;
+  height:100%;
   max-height: calc(100dvh - 120px);
 }
 
 .hero-phone {
   width: 448px;
-  height: 680px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   right: 4%;
+  object-fit: cover;
 }
 .hero-details {
   position: absolute;
@@ -212,7 +207,7 @@ h1 {
   color: #fff;
   margin-left: 60px;
   width: 494px;
-  height: 81px;
+  /* height: 81px; */
   text-align: left;
   margin-left: 60px;
   margin-top: 120px;

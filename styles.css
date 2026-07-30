@@ -1,9 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
 
-hero-phone
+
+/* faq */
+
 .max-width{
   width:100%;
   max-width:78rem;
+  margin: auto;
 }
 
 testimonial-img
@@ -1724,21 +1727,25 @@ placeholder {
 }
 .faq {
   width: 100%;
-  padding: 20px 40px;
-  margin-bottom: 30px;
+  padding: 80px 40px;
+  background: #318434;
 }
 .faq-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background:white;
+  border-radius: 18px;
+  padding:50px 40px;
 }
 .faq-item {
   border: 1px solid #48bd4c;
-  width: 1120px;
+  width: 100%;
   height: auto;
   border-radius: 20px;
   padding: 20px;
+  background:#edf9ed;
 }
 .faq-question {
   width: 100%;
@@ -1747,11 +1754,11 @@ placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 100%;
   font-family: "Euclid Circular B" sans-serif;
   letter-spacing: 0%;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
 }
 .faq-arrow {

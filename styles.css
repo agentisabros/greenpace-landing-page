@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-/* connect-text-container */
+/* securityImg-stack */
 .max-width{
   width:100%;
   max-width:90rem;
@@ -343,8 +343,8 @@ h1 {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   /* height: 560px; */
 }
 
@@ -356,10 +356,14 @@ h1 {
   height:100%;
   width:100%;
   object-fit: cover;
+  max-width:430px;
 }
 .img-overlay-container{
   display: flex;
   margin-left: -200px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 7px;
 }
 .heroImg-stack .img-overlay {
   min-width: 200px;
@@ -826,12 +830,14 @@ h1 {
 .security-content {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   /* grid-template-columns: 1fr 1fr; */
   gap: 150px;
 }
 .security-text {
   /* width: 636px; */
   flex:1;
+  width: 100%;
   text-align: left;
   margin-top: 50px;
   margin-left: 30px;
@@ -844,7 +850,8 @@ h1 {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   /* flex-direction: column; */
 }
 .securityImg-stack .img-main {
@@ -1935,9 +1942,18 @@ placeholder {
     overflow: hidden;
     min-width:200px;
   }
+
+  .heroImg-stack-main{
+   display:flex;
+   justify-content:flex-start;
+   align-items: flex-start;
+  }
+
   .heroImg-stack .img-main {
-    width: 257px !important;
-    height: 349px !important;
+    width: 100% !important;
+    height: 100% !important;
+    /* max-height: 450px; */
+    max-width: 70%;
   }
   .heroImg-stack .img-overlay {
     width: 178px;

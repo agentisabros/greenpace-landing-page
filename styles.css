@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-
+/* connect-text-container */
 .max-width{
   width:100%;
   max-width:90rem;
@@ -836,7 +836,6 @@ h1 {
   width: fit-content;
   object-fit: cover;
   flex: 1;
-  background-color: rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -929,6 +928,7 @@ h1 {
   gap: 40px;
   margin: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .connect-text {
@@ -1037,17 +1037,25 @@ footer {
   line-height: 30px;
   margin-top: 30px;
 }
+
+.contact{
+  width: 100%;
+  background-color: #48bd4c;
+}
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr 1fr; */
-  justify-content: space-between;
-  gap: 150px;
+  /* gap: 150px; */
   background-color: #48bd4c;
   color: #fff;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
+  justify-content: start;
+  width: 100%;
+  align-items: center;
 }
 .contact-holder p {
   font-size: 18px;
@@ -1067,11 +1075,11 @@ footer {
 }
 
 .contact-info-holder {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
-  gap: 350px;
-  min-width: 280px;
-  justify-content: space-between;
+  /* gap: 350px; */
+  /* min-width: 280px; */
+  justify-content: start;
 }
 .social-icons,
 .mobile-social-icons {
@@ -1108,6 +1116,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .contact-nav p {
   font-weight: 400;
@@ -2297,7 +2306,7 @@ placeholder {
     width: 100%;
   }
   .connect-text-container {
-    gap: 15px;
+    gap: 25px;
   }
   .connect h2 {
     width: 100%;

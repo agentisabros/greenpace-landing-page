@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-/* securityImg-stack */
+/* securityImg-green */
 .max-width{
   width:100%;
   max-width:90rem;
@@ -170,9 +170,14 @@ nav img {
 .hero-img{
   position:relative;
   height:100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #48bd4c;
 }
 
-.hero-img::after {
+/* .hero-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -181,25 +186,55 @@ nav img {
   height: 100%;
   background: rgba(0, 0, 0, 0.15);
   max-height: calc(100dvh - 90px);
-}
+} */
 
 .hero-image{
   width:100%;
   object-fit: cover;
   height:100%;
-  max-height: calc(100dvh - 90px);
+  position: absolute;
+  /* max-height: calc(100dvh - 90px); */
+}
+
+.hero-phon{
+  width:100%;
+  object-fit: contain;
+  height:100%;
+  z-index:10;
+}
+
+.hero-phone-container{
+  right:0;
+  position:relative;
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+}
+
+.hero-phone-container img{
+  width:100%;
+  object-fit: contain;
+  height:100%;
+  /* position:absolute; */
+  right:0%;
+  /* background:blue; */
+  object-position: right center;
 }
 
 .hero-phone {
-  width: 448px;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 4%;
-  object-fit: cover;
+ width:100%;
+  object-fit: contain;
+  height:100%;
+  position:absolute;
+  /* z-index: -1; */
+  right:0%;
 }
 .hero-details {
   position: absolute;
+  /* background:blue; */
   top: 40%;
   left: 0;
   transform: translateY(-50%);
@@ -846,30 +881,33 @@ h1 {
 .securityImg-stack {
   position: relative;
   width: fit-content;
-  object-fit: cover;
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: flex-end;
   width: 100%;
   /* flex-direction: column; */
 }
 .securityImg-stack .img-main {
-  width: 191px;
-  height: 207px;
-  position: absolute;
-  left: -10px;
+  width: 100%;
+  max-width: 191px;
+  max-height: 207px;
+  height: 100%;
+  /* position: absolute; */
+  margin-right: -40%;
   top: 30px;
   object-fit: cover;
   z-index: 5;
 }
 .securityImg-stack .img-overlay {
-  width: 381px;
-  height: 548px;
+  width: 100%;
+  /* max-width: 381px; */
+  height: 100%;
+  max-height: 548px;
   display: block;
   top: 97px;
   left: 30px;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 10;
 }
 .security-text h2 {
@@ -1979,13 +2017,13 @@ placeholder {
   }
   .hero-img {
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     position: relative;
     margin-top: 20px;
     padding: 0 !important;
     overflow: hidden;
     margin-bottom: 0 !important;
-  }
+  } 
 
   .hero-img::after {
       height:400px;
@@ -1993,7 +2031,17 @@ placeholder {
 
   .hero-image{
       height:400px;
+      width: 100%;
   }
+
+ .hero-phon{
+      height:100%;
+      width: 100%;
+  }
+
+.hero-phone-container{
+  max-width:500px;
+}
 
   .hero-img img {
     width: 100%;
@@ -2310,11 +2358,12 @@ placeholder {
     text-align: left;
   }
   .securityImg-stack .img-overlay {
-    height: 444px !important;
+    height: 100% !important;
+    /* height: 444px !important; */
     margin-top: -150px !important;
   }
   .securityImg-stack .img-main {
-    margin-top: -150px;
+    margin-top: -10px;
   }
   .security .side-img img {
     width: 45px;
@@ -2724,10 +2773,14 @@ placeholder {
     margin-top: 20px;
   }
   .hero-phone {
-    width: 100%;
-    height: 242px;
-    max-width: 126px;
-    margin: 20px auto;
+    /* width: 100%; */
+    /* height: 100%; */
+    height: 402px;
+    /* max-width: 226px; */
+    /* right: 0%; */
+    /* margin: 0 auto; */
+    /* object-fit: contain; */
+    bottom: 0;
   }
   .products-explore {
     width: 100%;
@@ -3248,6 +3301,10 @@ placeholder {
       max-height: calc(100dvh - 60px);
   }
   .hero-image{
+      max-height: calc(100dvh - 96px);
+  }
+
+   .hero-phon{
       max-height: calc(100dvh - 96px);
   }
 

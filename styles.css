@@ -1,5 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-/* securityImg-green */
+
+/* farmer-img-stack */
+/* farm-content */
+/* products-explore process */
+/* highlight */
+
+
 .max-width{
   width:100%;
   max-width:90rem;
@@ -289,6 +295,7 @@ h1 {
   margin-top: 120px;
 }
 .store-buttons {
+  width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -299,7 +306,7 @@ h1 {
   margin-top: 30px;
 }
 .store-btn {
-  width: 155px;
+  /* width: 155px; */
   height: 53px;
   background-color: #fff;
   color: #000;
@@ -352,10 +359,13 @@ h1 {
 .btn-text .small {
   font-size: 11.5px;
   color: #333;
+    white-space: nowrap;
 }
 .btn-text .highlight {
   font-size: 16px;
   font-weight: 600;
+  /* color: white; */
+    white-space: nowrap;
 }
 .text {
   font-size: 21px;
@@ -1263,8 +1273,8 @@ hr {
   line-height: 26px;
   letter-spacing: -2%;
   font-family: "Euclid Circular B";
-  margin-top: 120px;
-  margin-bottom: 40px;
+  margin-top: 90px;
+  margin-bottom: 10px;
 }
 .process-container {
   display: flex;
@@ -1285,6 +1295,9 @@ hr {
   position: relative;
   font-family: "Euclid Circular B";
   text-align: center;
+   align-items: center;
+  justify-content: center;
+  /* background-color: #48bd4c; */
 }
 .process-card h3 {
   font-size: 22px;
@@ -1301,12 +1314,19 @@ hr {
 .process-card img {
   width: 74px;
   height: 74px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
-.process-card div {
-  left: 130px;
-  top: 20px;
-  position: absolute;
+.process-card-container {
+ align-items: center;
+  justify-content: center;
+  display:flex;
+  width: 100%;
+}
+.process-card-container div {
+  /* left: 130px; */
+  /* top: 20px; */
+  /* position: absolute; */
+  margin-left: -5%;
   text-align: center;
   padding-top: 5px;
   width: 30px;
@@ -1488,24 +1508,38 @@ hr {
 }
 .farmer-img-stack {
   position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
-  margin-left: 40px;
+  margin-right: 100px;
   margin-top: 0;
+  /* background-color: red; */
+  flex:1;
 }
-.farmer-img-stack .img-main {
-  width: 424px;
-  height: 482px;
-  position: absolute;
+.farmer-img-stack .img-main-about {
+  /* width: 424px; */
+  max-width: 424px;
+  width: 100%;
+  /* height: 482px; */
+  max-height: 482px;
+  height: 100%;
+  /* position: absolute; */
   left: 0;
   top: 10px;
   border-radius: 15px;
   display: block;
 }
-.farmer-img-stack .img-overlay {
-  width: 390px;
-  height: 359px;
-  position: absolute;
+.farmer-img-stack .img-overlay-about {
+  /* width: 390px;
+  height: 359px; */
+  max-width: 390px;
+  max-height: 359px;
+  width: 100%;
+  height: 100%;
+  margin-left:-150px;
+  /* position: absolute; */
   left: 50%;
   top: 60px;
   border-radius: 15px;
@@ -1515,7 +1549,8 @@ hr {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-
+  flex-wrap: wrap;
+  /* background-color: blue; */
   width: 100%;
   padding-top: 40px;
 }
@@ -1538,6 +1573,7 @@ hr {
   width: 500px;
   margin-top: 40px;
   padding: 0 40px;
+  flex:1;
 }
 .farm-container h3 {
   font-family: "Euclid Circular B", sans-serif;
@@ -1711,6 +1747,22 @@ article {
   padding-bottom: 40px;
   width: 550px !important;
 }
+
+.farmers-wrapper-btn-wrap{
+  display:flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+}
+
+.farmers-wrapper a {
+  border:1px solid #48bd4c;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+}
+
 .farmers-heading .store-buttons {
   margin-left: 0 !important;
   margin-top: 0 !important;
@@ -2030,6 +2082,10 @@ placeholder {
     height: auto !important;
   }
 
+  .products-explore p {
+    font-size: 18px;
+  }
+
   .hero {
     display: flex;
     width: 100%;
@@ -2064,6 +2120,11 @@ placeholder {
 
 .hero-phone-container{
   max-width:500px;
+}
+
+.hero-phone-container img{
+  max-width:200px;
+  object-position: right bottom;
 }
 
   .hero-img img {
@@ -2128,7 +2189,7 @@ placeholder {
     margin-top: 0;
   }
   .store-btn {
-    width: 130px;
+    /* width: 130px; */
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -2617,8 +2678,10 @@ placeholder {
     line-height: 26px;
     letter-spacing: -2%;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    /* margin-top: 20px; */
+    margin-bottom: 0;
+    /* margin-bottom: 20px; */
     width: 100%;
   }
 
@@ -2628,8 +2691,6 @@ placeholder {
     margin-left: 30px;
   }
   .process-card div {
-    left: 50%;
-    top: 20px;
     transform: translateX(0%);
   }
   .process-card h3 {
@@ -3044,8 +3105,8 @@ placeholder {
     align-self: flex-start !important;
   }
   .farmers-heading .store-buttons .sec-store-btn {
-    width: 133px;
-    height: 40px;
+    width: 150px;
+    height: 42px;
     text-decoration: none;
   }
   .farmers-heading .store-buttons .sec-store-btn img {
@@ -3253,6 +3314,10 @@ placeholder {
     font-weight: 400;
     font-size: 18px;
   }
+
+  .hero-phone-container-about{
+  margin-bottom:-10%;
+}
 }
 
 @media (max-width: 980px) {

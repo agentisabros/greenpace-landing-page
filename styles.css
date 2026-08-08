@@ -1,12 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+/* products-categories */
+/* products-explore process */
+/* farm-content */
+/* image-wrapper */
 /* hero-phone-container-about */
-/* hero-phone-container */
-/* hero-contact */
-/* form-holder */
-/* message */
-/* contact-content */
-/* contact-info-holder */
-/* hero-details-contact */
+/* farmer-img-stack */
+/* sec-store-btn */
+
 
 /* ==================== GLOBAL ==================== */
 .max-width {
@@ -271,7 +271,6 @@ nav img {
 .hero-phone-container-about img {
   object-fit: contain;
   height: 100%;
-  right: 0%;
 }
 
 .hero-phone {
@@ -757,13 +756,14 @@ h1 {
   overflow: hidden;
   margin-right: 20px;
   border-radius: 16px;
+  /* background-color: blue; */
 }
 
 .testimonial-track {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 345px;
+  min-height: 360px;
 }
 
 .testimonial-card {
@@ -776,12 +776,13 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  height: 380px;
+  min-height: 360px;
+  /* height: 380px; */
   width: 100%;
   max-width: none;
   justify-content: space-between;
   opacity: 0;
-  transform: translateX(40px) scale(0.96);
+  /* transform: translateX(40px) scale(0.96); */
   pointer-events: none;
 }
 
@@ -1640,6 +1641,7 @@ hr {
   margin-top: 0;
   min-width: 350px;
   flex: 1;
+  padding: 20px 0;
 }
 
 .farmer-img-stack .img-main-about {
@@ -1652,14 +1654,18 @@ hr {
   border-radius: 15px;
   display: block;
   flex: 1;
+  min-width: 350px;
+  /* margin-left: 90px; */
 }
 
 .farmer-img-stack .img-overlay-about {
   max-width: 340px;
   max-height: 309px;
+  min-width: 220px;
   width: 100%;
   height: 100%;
   margin-left: -150px;
+  margin-right: 10px;
   left: 50%;
   top: 60px;
   border-radius: 15px;
@@ -1673,7 +1679,7 @@ hr {
   align-items: flex-start;
   flex-wrap: wrap;
   padding-top: 40px;
-  margin: 0 80px;
+  margin: 30px 80px;
 }
 
 .farm-content a {
@@ -1721,7 +1727,7 @@ hr {
 }
 
 /* ==================== PRODUCTS CATEGORIES ==================== */
-section .products-categories {
+.products-categories {
   width: 100%;
   height: auto;
   padding: 40px 20px;
@@ -1739,7 +1745,8 @@ section .products-categories {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  padding: 0 40px;
+  width: 100%;
+  /* padding: 0 40px; */
   align-items: center;
 }
 
@@ -1786,7 +1793,7 @@ section .products-categories {
   gap: 1rem;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  padding: 40px;
+  /* padding: 40px; */
   margin-left: 40px;
 }
 
@@ -1795,14 +1802,18 @@ section .products-categories {
 }
 
 article {
+  flex:1;
   border: 2px solid #48bd4c4d;
   border-radius: 20px;
   margin-bottom: 50px;
+  max-width: 594px;
+  padding: 7px;
+  flex:1;
 }
 
 .image-wrapper img {
-  width: 424px;
-  height: 496px;
+  height:330px;
+  width: 100%;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -1848,6 +1859,7 @@ article {
   line-height: 30px;
   letter-spacing: 0%;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .product-info-wrap p {
@@ -1869,6 +1881,7 @@ article {
   border-radius: 20px;
   width: 107px;
   height: 41px;
+  white-space: nowrap;
 }
 
 /* ==================== FARMERS SECTION ==================== */
@@ -2539,6 +2552,10 @@ placeholder {
     margin: 0;
   }
 
+  .hero-phone-container-about {
+  margin-bottom: -18%;
+}
+
   h1,
   .hero-heading {
     font-size: 26px;
@@ -2586,6 +2603,9 @@ placeholder {
   .store-btn img {
     width: 18px;
     height: 18px;
+  }
+  .sec-store-btn{
+    margin-top: 0px;
   }
 
   .btn-text .small {
@@ -3061,6 +3081,12 @@ placeholder {
 
   .process-container {
     padding: 20px 16px;
+    flex-direction: column;
+  }
+
+  .arrow-img{
+    rotate: 90deg;
+    margin: 80px 0;
   }
 
   .process-card {
@@ -3115,9 +3141,15 @@ placeholder {
     margin-left: 0;
   }
 
+  article{
+    width: 100%;
+    max-width: 514px;
+  }
+
   .image-wrapper img {
     width: 100%;
-    height: 300px;
+    height:280px;
+    min-width: 230px;
   }
 
   .promo-tag {
@@ -3180,6 +3212,7 @@ placeholder {
   .farm-content {
     margin: 0 16px;
     padding-top: 20px;
+    flex-direction: column;
   }
 
   .farm-container {
@@ -3212,12 +3245,15 @@ placeholder {
 
   .farmer-img-stack .img-main-about {
     max-width: 100%;
-    max-height: 350px;
+    max-height: 390px;
+    object-fit: contain;
+    min-width: 230px;
   }
 
   .farmer-img-stack .img-overlay-about {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 250px;
+    min-width: 10px;
+    /* max-height: 200px; */
     margin-left: -100px;
   }
 
@@ -3428,9 +3464,9 @@ placeholder {
    ================================================================ */
 @media (max-width: 420px) {
   .hero {
-    height: 45vh;
-    max-height: 480px;
-    min-height: 380px;
+    /* height: 35vh;
+    max-height: 410px; */
+    min-height: 340px;
   }
 
   h1,
@@ -3454,6 +3490,10 @@ placeholder {
     width: 195px;
     max-width: 195px;
   }
+
+  .hero-phone-container-about {
+  margin-bottom: -35%;
+}
 
   .store-btn {
     height: 38px;
@@ -3483,7 +3523,8 @@ placeholder {
   }
 
   .image-wrapper img {
-    height: 250px;
+    height: 100%;
+    min-width: 200px;
   }
 }
 
@@ -3493,7 +3534,7 @@ placeholder {
    ================================================================ */
 @media (max-width: 360px) {
   .hero {
-    height: 58vh;
+    height: 38vh;
     max-height: 420px;
     min-height: 340px;
   }

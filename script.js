@@ -1,15 +1,26 @@
-const hamburger = document.getElementById("hamburger");
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const navLinks = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 const slider = document.querySelector(".product-slider, .products-slider");
 const faqArrows = document.querySelectorAll(".faq-arrow");
+const hamburger = document.getElementById('hamburger');
+const navUl = document.querySelector('nav ul');
+const navBtns = document.querySelector('.nav-btns');
 
-if (hamburger && navLinks && nav) {
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    nav.classList.toggle("open");
-    hamburger.classList.toggle("open");
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navUl.classList.toggle('open');
+    navBtns.classList.toggle('open');
+  });
+
+  // Close menu when a link is clicked
+  navUl.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navUl.classList.remove('open');
+      navBtns.classList.remove('open');
+    });
   });
 }
 

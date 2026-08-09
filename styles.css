@@ -398,6 +398,7 @@ h1 {
   justify-content: flex-start;
   margin-left: 60px;
   margin-top: 30px;
+  text-align: center;
 }
 
 .store-buttons button {
@@ -2338,6 +2339,14 @@ placeholder {
     line-height: 1.45;
   }
 
+  .hero-description-faq{
+     font-size: 17px;
+    margin-left: 36px;
+    margin-top: 70px;
+    max-width: 360px;
+    line-height: 1.45;
+  }
+
   .store-buttons {
     margin-left: 36px;
     margin-top: 24px;
@@ -2640,6 +2649,16 @@ placeholder {
     max-width: 100%;
     line-height: 1.5;
     text-align: left;
+    font-weight: 400;
+  }
+
+  .hero-description-faq{
+      font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 12px 0 0 0;
+    max-width: 100%;
+    line-height: 1.5;
+    text-align: center;
     font-weight: 400;
   }
 

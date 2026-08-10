@@ -1,20 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-/* products-heading */
-/* products-categories */
-/* products-explore process */
-/* farm-content */
-/* image-wrapper */
-/* hero-phone-container-about */
-/* farmer-img-stack */
-/* sec-store-btn */
-/* sec-store-btn */
-/* image-wrapper */
-/* product-info-wrap */
+/* mission-container */
 /* product-info-wrap */
 /* hero-heading */
 /* hero-details */
 /* hero-description */
 /* farmers-heading */
+/* blue */
+/* testimonial-main-img */
+/* testimonial-img */
+/* connect-text- */
+/* about-image */
+/* mission */
+/* card-holder */
 
 
 
@@ -763,6 +760,13 @@ h1 {
   height: 100%;
 }
 
+.testimonial-main-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 365px;
+}
+
 .trusted-badge {
   position: absolute;
   bottom: 0;
@@ -1489,6 +1493,10 @@ hr {
 }
 
 /* ==================== PRODUCT HOLDER ==================== */
+.product-holder{
+  width: 100%;
+}
+
 .product-holder h2 {
   font-size: 40px;
   font-family: "Euclid Circular B", sans-serif;
@@ -1506,7 +1514,7 @@ hr {
   overflow-x: scroll;
   flex-wrap: nowrap;
   width: 100%;
-  margin-left: 40px;
+  padding-left: 40px;
   margin-bottom: 100px;
   scrollbar-width: none;
 }
@@ -1523,12 +1531,13 @@ hr {
 /* ==================== MISSION ==================== */
 .mission {
   background: #48bd4c;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 50px;
   padding: 20px;
 }
 
 .mission-container {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -1537,20 +1546,24 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex:1;
+  min-width:390px;
 }
 
 .mission-card {
-  width: 490px;
-  height: 330px;
+  width: 100%;
+  min-height: 330px;
   background: #fff;
   border-radius: 15px;
   padding: 30px;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .iphone-img {
-  width: 461px;
-  height: 791px;
+  flex:1;
+  object-fit: contain;
+  min-width: 390px;
+ max-height: 791px;
   margin: 60px 40px 20px 20px;
 }
 
@@ -1561,6 +1574,10 @@ hr {
   letter-spacing: -2%;
   font-weight: 600;
   margin: 20px auto;
+}
+
+.mission-holder{
+  flex:1;
 }
 
 .mission-card p {
@@ -1587,18 +1604,29 @@ hr {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.about-image{
+  flex:1;
+  max-width: 630px;
+  max-height: 699px;
+  min-width: 420px;
 }
 
 .about-image img {
-  width: 630px;
-  height: 699px;
   border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-content {
-  width: 686px;
+  max-width: 686px;
   text-align: left;
   margin-top: -40px;
+  flex:1;
+  min-width: 350px;
 }
 
 .about-content h2 {
@@ -1616,7 +1644,7 @@ hr {
   line-height: 31px;
   letter-spacing: 0%;
   color: #000;
-  width: 609px;
+  /* width: 609px; */
 }
 
 .about-content a {
@@ -1637,13 +1665,13 @@ hr {
   line-height: 30px;
   letter-spacing: 0%;
   font-weight: 600;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .card-header {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0px;
   align-items: center;
   justify-content: flex-start;
   margin-top: 30px;
@@ -2649,7 +2677,7 @@ placeholder {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.9);
     margin: 12px 0 0 0;
-    max-width: 100%;
+    max-width: 600px;
     line-height: 1.5;
     text-align: left;
     font-weight: 400;
@@ -2663,6 +2691,14 @@ placeholder {
     line-height: 1.5;
     text-align: center;
     font-weight: 400;
+  }
+
+  .card-holder{
+    min-width: auto;
+  }
+
+  .card-header{
+    min-width: 0;
   }
 
   .store-buttons {
@@ -3174,6 +3210,10 @@ placeholder {
   }
 
   /* ==================== PRODUCT HOLDER (MOBILE) ==================== */
+.product-holder{
+  width: 100%;
+}
+
   .product-holder h2 {
     font-size: 22px;
     margin-top: 40px;
@@ -3391,7 +3431,7 @@ placeholder {
   .about-holder {
     flex-direction: column;
     margin-top: 30px;
-    gap: 20px;
+    gap: 35px;
   }
 
   .about-image img {
@@ -3403,7 +3443,7 @@ placeholder {
 
   .about-content {
     width: 100%;
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .about-content h2 {
@@ -3634,6 +3674,14 @@ placeholder {
   .product-info-wrap p
   {
      font-size: 14px;
+  }
+
+  .about-image{
+    min-width: auto;
+  }
+
+  .about-content{
+    min-width: auto;
   }
 }
 

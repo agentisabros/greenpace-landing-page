@@ -1,19 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
-/* mission-container */
-/* product-info-wrap */
-/* hero-heading */
-/* hero-details */
-/* hero-description */
-/* farmers-heading */
-/* blue */
-/* testimonial-main-img */
-/* testimonial-img */
-/* connect-text- */
-/* about-image */
-/* mission */
-/* card-holder */
-
-
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
+/* logo-holder */
 
 /* ==================== GLOBAL ==================== */
 .max-width {
@@ -72,7 +58,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
-  transition: background-color 0.3s ease, color 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.2s ease;
 }
 
 nav,
@@ -196,14 +184,20 @@ nav img {
 }
 
 .logo-holder {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 .logo-holder img {
-  width: 64px;
-  height: 60px;
+  width: 100%;
+  object-fit:contain;
+  height: 100%;
+  min-width: 60px;
+  max-width: 90px;
+
 }
 
 .logo-text {
@@ -760,7 +754,7 @@ h1 {
   height: 100%;
 }
 
-.testimonial-main-img{
+.testimonial-main-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1080,7 +1074,7 @@ h1 {
   border-radius: 5px;
   justify-content: center;
   align-items: center;
-  flex:1;
+  flex: 1;
 }
 
 .security-btn a {
@@ -1143,7 +1137,7 @@ h1 {
   border-radius: 20px;
   text-align: center;
   padding: 30px;
-  box-shadow: 0 10px 0px #F4B740;
+  box-shadow: 0 10px 0px #f4b740;
 }
 
 .connect-text h3 {
@@ -1222,7 +1216,9 @@ footer {
 
 .contact-header h2 {
   font-size: 31px;
-  font-family: Euclid Circular B, sans-serif;
+  font-family:
+    Euclid Circular B,
+    sans-serif;
   font-weight: 700;
   color: #fff;
   line-height: 100%;
@@ -1231,10 +1227,11 @@ footer {
 
 .contact-header img {
   width: auto;
-  border-radius: 100%;
-  height: 50px;
+  /* border-radius: 100%; */
+  /* height: 50px; */
   object-fit: cover;
   margin-left: 0;
+  max-width: 90px;
 }
 
 .contact-details p {
@@ -1262,7 +1259,7 @@ footer {
   justify-content: start;
   width: 100%;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
 
 .contact-holder p {
@@ -1277,17 +1274,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.bottom-logo-holder img {
-  width: 42px;
-  height: 39px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10%;
 }
 
 .contact-info-holder {
   display: flex;
   flex-wrap: wrap;
-  flex:1;
+  flex: 1;
   /* width:100%; */
   /* grid-template-columns: 1fr 1fr; */
   gap: 30px;
@@ -1310,7 +1305,9 @@ footer {
   height: 44px;
   border-radius: 50%;
   color: #edfaed;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .social-icons a:hover,
@@ -1334,8 +1331,8 @@ footer {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  flex:1;
-  max-width:200px;
+  flex: 1;
+  max-width: 200px;
 }
 
 .contact-nav p {
@@ -1363,8 +1360,8 @@ footer {
   flex-direction: column;
   gap: 10px;
   min-width: 200px;
-  max-width:200px;
-  width:100%;
+  max-width: 200px;
+  width: 100%;
   /* flex:1; */
 }
 
@@ -1493,7 +1490,7 @@ hr {
 }
 
 /* ==================== PRODUCT HOLDER ==================== */
-.product-holder{
+.product-holder {
   width: 100%;
 }
 
@@ -1546,8 +1543,8 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex:1;
-  min-width:390px;
+  flex: 1;
+  min-width: 390px;
 }
 
 .mission-card {
@@ -1560,10 +1557,10 @@ hr {
 }
 
 .iphone-img {
-  flex:1;
+  flex: 1;
   object-fit: contain;
   min-width: 390px;
- max-height: 791px;
+  max-height: 791px;
   margin: 60px 40px 20px 20px;
 }
 
@@ -1576,8 +1573,8 @@ hr {
   margin: 20px auto;
 }
 
-.mission-holder{
-  flex:1;
+.mission-holder {
+  flex: 1;
 }
 
 .mission-card p {
@@ -1607,8 +1604,8 @@ hr {
   flex-wrap: wrap;
 }
 
-.about-image{
-  flex:1;
+.about-image {
+  flex: 1;
   max-width: 630px;
   max-height: 699px;
   min-width: 420px;
@@ -1625,7 +1622,7 @@ hr {
   max-width: 686px;
   text-align: left;
   margin-top: -40px;
-  flex:1;
+  flex: 1;
   min-width: 350px;
 }
 
@@ -1876,17 +1873,17 @@ hr {
 }
 
 article {
-  flex:1;
+  flex: 1;
   border: 2px solid #48bd4c4d;
   border-radius: 20px;
   margin-bottom: 50px;
   max-width: 594px;
   padding: 7px;
-  flex:1;
+  flex: 1;
 }
 
 .image-wrapper img {
-  height:330px;
+  height: 330px;
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -2074,12 +2071,12 @@ article {
   gap: 40px;
   color: #000;
   justify-content: space-between;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .message-holder {
-  flex:1;
-  min-width:290px;
+  flex: 1;
+  min-width: 290px;
   text-align: left;
   color: #000 !important;
 }
@@ -2106,8 +2103,8 @@ article {
   color: #000;
 }
 
-.form-holder{
-  flex:1;
+.form-holder {
+  flex: 1;
 }
 
 form {
@@ -2297,12 +2294,11 @@ placeholder {
 
 /* ==================== GRADIENT TEXT ==================== */
 .gradient-text {
-  background: linear-gradient(90deg, #48BD4C 0%, #000000 100%);
+  background: linear-gradient(90deg, #48bd4c 0%, #000000 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 
 /* ================================================================
    RESPONSIVE — TABLET (769px – 1024px)
@@ -2370,8 +2366,8 @@ placeholder {
     line-height: 1.45;
   }
 
-  .hero-description-faq{
-     font-size: 17px;
+  .hero-description-faq {
+    font-size: 17px;
     margin-left: 36px;
     margin-top: 70px;
     max-width: 360px;
@@ -2457,7 +2453,6 @@ placeholder {
   }
 }
 
-
 /* ================================================================
    RESPONSIVE — MOBILE (≤ 768px)
    ================================================================ */
@@ -2485,7 +2480,7 @@ placeholder {
 
   .logo-holder img {
     width: 28px;
-    height: 26px;
+    /* height: 26px; */
   }
 
   .logo-text {
@@ -2639,8 +2634,8 @@ placeholder {
   }
 
   .hero-phone-container-about {
-  margin-bottom: -18%;
-}
+    margin-bottom: -18%;
+  }
 
   h1,
   .hero-heading {
@@ -2652,7 +2647,7 @@ placeholder {
     line-height: 1.2;
     text-align: left;
     color: #fff;
-  }  
+  }
   h1,
   .hero-heading-faq {
     font-size: 26px;
@@ -2665,11 +2660,11 @@ placeholder {
     color: #fff;
   }
 
-  .hero-details-contact h5{
+  .hero-details-contact h5 {
     font-size: 45px;
   }
 
-   .hero-details-contact p{
+  .hero-details-contact p {
     font-size: 20px;
   }
 
@@ -2683,8 +2678,8 @@ placeholder {
     font-weight: 400;
   }
 
-  .hero-description-faq{
-      font-size: 14px;
+  .hero-description-faq {
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.9);
     margin: 12px 0 0 0;
     max-width: 100%;
@@ -2693,11 +2688,11 @@ placeholder {
     font-weight: 400;
   }
 
-  .card-holder{
+  .card-holder {
     min-width: auto;
   }
 
-  .card-header{
+  .card-header {
     min-width: 0;
   }
 
@@ -2719,7 +2714,7 @@ placeholder {
     width: 18px;
     height: 18px;
   }
-  .sec-store-btn{
+  .sec-store-btn {
     margin-top: 0px;
   }
 
@@ -3121,7 +3116,7 @@ placeholder {
     padding: 20px;
     border-radius: 10px;
     margin-left: 0;
-    box-shadow: 0 10px 0px #F4B740;
+    box-shadow: 0 10px 0px #f4b740;
   }
 
   .connect-text h3 {
@@ -3199,7 +3194,7 @@ placeholder {
     flex-direction: column;
   }
 
-  .arrow-img{
+  .arrow-img {
     rotate: 90deg;
     margin: 80px 0;
   }
@@ -3210,9 +3205,9 @@ placeholder {
   }
 
   /* ==================== PRODUCT HOLDER (MOBILE) ==================== */
-.product-holder{
-  width: 100%;
-}
+  .product-holder {
+    width: 100%;
+  }
 
   .product-holder h2 {
     font-size: 22px;
@@ -3250,8 +3245,8 @@ placeholder {
     margin-bottom: 20px;
   }
 
-  .products-shop-btn{
-    display:none;
+  .products-shop-btn {
+    display: none;
   }
 
   .products-heading a {
@@ -3264,15 +3259,15 @@ placeholder {
     margin-left: 0;
   }
 
-  article{
+  article {
     width: 100%;
     max-width: 514px;
-    border:none;
+    border: none;
   }
 
   .image-wrapper img {
     width: 100%;
-    height:280px;
+    height: 280px;
     min-width: 250px;
   }
 
@@ -3434,6 +3429,10 @@ placeholder {
     gap: 35px;
   }
 
+  .about-image {
+    min-width: auto;
+  }
+
   .about-image img {
     width: 100%;
     height: auto;
@@ -3473,8 +3472,8 @@ placeholder {
     gap: 30px;
   }
 
-  .message-holder{
-    min-width:200px;
+  .message-holder {
+    min-width: 200px;
   }
 
   .message-holder h2 {
@@ -3592,7 +3591,6 @@ placeholder {
   }
 }
 
-
 /* ================================================================
    RESPONSIVE — SMALL MOBILE (≤ 420px)
    ================================================================ */
@@ -3608,7 +3606,7 @@ placeholder {
     font-size: 22px;
   }
 
-   .hero-details-contact h5{
+  .hero-details-contact h5 {
     font-size: 35px;
   }
 
@@ -3626,12 +3624,12 @@ placeholder {
   }
 
   .hero-phone-container-about {
-  margin-bottom: -35%;
-}
+    margin-bottom: -35%;
+  }
 
-.farmers-heading{
-  min-width: auto;
-}
+  .farmers-heading {
+    min-width: auto;
+  }
 
   .store-btn {
     height: 38px;
@@ -3663,28 +3661,25 @@ placeholder {
   .image-wrapper img {
     /* height: 100%; */
     min-width: 200px;
-      height:280px;
+    height: 280px;
     min-width: 250px;
   }
-  .product-info-wrap h5
-  {
-     font-size: 17px;
+  .product-info-wrap h5 {
+    font-size: 17px;
   }
 
-  .product-info-wrap p
-  {
-     font-size: 14px;
+  .product-info-wrap p {
+    font-size: 14px;
   }
 
-  .about-image{
+  .about-image {
     min-width: auto;
   }
 
-  .about-content{
+  .about-content {
     min-width: auto;
   }
 }
-
 
 /* ================================================================
    RESPONSIVE — EXTRA SMALL (≤ 360px)
@@ -3708,7 +3703,6 @@ placeholder {
   .hero-phone-container {
     width: 170px;
   }
-
 
   /* .hero-phone-container img {
     width: 170px;
